@@ -33,3 +33,40 @@ console.log(typeof (prType5)) //object
 /*
 refernce type has 3 types objects,array,functions
 */
+
+/*
+Object is similar like object in real life. Think of a person as object and his name, age, address will be property of person object
+*/
+
+let objectExample = {}; //object literal
+let person = {
+    name: 'Nithin',
+    age: 20
+};
+
+console.log(person);
+
+/*
+There are two ways to access or change the value of property in object
+*/
+
+//DOT NOTATION
+person.name = "Nithin V";
+//We can read value using dot notation
+console.log(person.name)// reading the value
+
+//BRACKET NOTATION
+person["age"] = 19;
+console.log(person['age']);
+
+/*
+When to use which notation
+normally if the program is simple we can use dot notation
+
+however at time of writing code, if u don't know what property to access use bracket notation. Example
+*/
+
+selection = "name";
+console.log(person[selection]);
+selection = "age";
+console.log(person[selection]);
