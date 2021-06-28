@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>My first page</title>
     <style>
-      img {
+      .styling_image {
         width: 100px;
         border-radius: 50px;
         float: left;
@@ -14,31 +14,44 @@
       .username {
         font-weight: bold;
       }
+
+      .previous {
+        width: 50%;
+        height: 50%;
+      }
     </style>
   </head>
   <body>
-    <img src="pic/myimg.jpg" alt="my image" />
-    <p class="username">@NithinShanmugam</p>
-    <p>I am designing my webpage</p>
+    <div>
+      <img src="pic/lesson1.png" alt="my image" class="previous" />
+    </div>
+    <br />
+    <br />
+    <div>
+      <img src="pic/myimg.jpg" alt="my image" class="styling_image" />
+      <p class="username">@NithinShanmugam</p>
+      <p>I am designing my webpage</p>
+    </div>
+    <br />
+    <br />
 
-    <br />
-    <br />
-    <br />
-    <p>
-      If you set border radius property to half the value of width property in
-      css, then you will get a round image like profile pictures.
-      <br />
-      Now our text lies after our image.
-      <br />
-      To make them appear in same line and push image to left, set float to left
-      To leave some space between text and image, margin-right 10px.
-      <br />
-      To make font of only username bold, give assign user name a class
-      attribute called username and set font-weight to bold Now class is used to
-      put different html tags in different categories.
-      <br />
-      For example even though we have two tag we differentiate them by giving
-      username a class attribute which styles it in different way.
-    </p>
+    <div>
+      <p>
+        If you set border radius property to half the value of width property in
+        css, then you will get a round image like one in the right.
+        <br />
+        Now our text lies after our image.
+        <br />
+        To make them appear in same line and push image to left, set float to
+        left To leave some space between text and image, margin-right 10px.
+        <br />
+        To make font of only username bold, give assign user name a class
+        attribute called username and set font-weight to bold Now class is used
+        to put different html tags in different categories.
+        <br />
+        For example even though we have two tag we differentiate them by giving
+        username a class attribute which styles it in different way.
+      </p>
+    </div>
   </body>
 </html>
