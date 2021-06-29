@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/lesson1.css" />
+    <style>
+      .container {
+        display: flex;
+      }
+      .external {
+        background-color: bisque;
+        box-shadow: beige;
+        flex: 25%;
+        margin-right: 5%;
+        padding: 15px;
+        height:220px;
+        border-radius: 22px;
+      }
+      .embedded {
+        background-color: blue;
+        box-shadow: chocolate;
+        flex: 25%;
+        margin-right: 5%;
+        padding: 15px;
+        height:220px;
+        border-radius: 22px;
+      }
+      .inline {
+        background-color: blueviolet;
+        box-shadow: brown;
+        flex: 25%;
+        padding: 15px;
+        height:220px;
+        border-radius: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        There are three different ways to include css to your html doc
+        <ul>
+          <li>embedded stylesheet</li>
+          <li>external stylesheet</li>
+          <li>inline stylesheet</li>
+        </ul>
+      </p>
+      <div class="container">
+        <div class = "embedded">
+          <p>
+            Embedded stylesheet is nothing but including style sheet in head section with &lt;style&gt; tag.
+            example:
+            <div>
+              &lt;style&gt;<br>
+              p {<br>
+                color: orange;<br>
+              }<br>
+              &lt;/style&gt;
+            </div>
+          </p>
+        </div>
+        <div class="external">
+          <p>
+            external style sheet is nothing but including all those styles in a different file and saving it with .css extension.
+            After that you need to include it with &lt;link&gt; tag.
+            <div>Example: &lt;link rel="stylesheet" href="style.css"&gt;</div>
+          </p>
+        </div>
+        <div class="inline">
+          <p>inline style sheet is nothing but including style within html tag.
+            <div>Example: &lt;p style = "color = blue; font-weight = bold "&gt;</div>
+            Note if the html document has external and embedded stylesheet which have different property for same tag then external style sheet is overwritten
+            and embedded style is followed. If html doc also have inline then html follows inline styles.
+          </p> 
+        </div>
+      </div>
+      <p>
+        Also keep in mind that different browsers have different default rendering properties which means some browsers 
+        may have 0 margin whereas some may have 10px as margin. So to avoid this, we should overwrite all those default rendering. 
+        To save time there is a website called <a href="https://necolas.github.io/normalize.css/">normalize css</a> 
+        which have done this work for you. You can copy that and create a new stylesheet and include ut in your html document.</p>
+    </div>
+  </body>
+</html>
