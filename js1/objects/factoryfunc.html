@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/html_css_1/css/normalize.css" />
+    <style>
+      .container {
+        display: flex;
+      }
+      .way1 {
+        background-color: bisque;
+        box-shadow: beige;
+        flex: 40%;
+        margin-right: 5%;
+        padding: 15px;
+        height: 320px;
+        border-radius: 32px;
+      }
+      .way2 {
+        background-color: aqua;
+        box-shadow: chocolate;
+        flex: 40%;
+        margin-right: 5%;
+        padding: 15px;
+        height: 320px;
+        border-radius: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="way1">
+        function createStudentmarks(maths, physics,chemistry){
+        <br />
+        let student1Marks = {
+        <br />
+        maths: maths,
+        <br />
+        physics: physics,
+        <br />
+        chemistry: chemistry,
+        <br />
+        total: function() {
+        <br />
+        console.log(
+        <br />
+        this.maths+this.physics+this.chemistry
+        <br />
+        );
+        <br />
+        }
+        <br />
+        };
+        <br />
+        return student1Marks;
+        <br />
+        }
+        <br />
+      </div>
+      <div class="way2">
+        function createStudentmarks1(maths, physics,chemistry){
+        <br />
+        return {
+        <br />
+        maths: maths,
+        <br />
+        physics, //in modern js if key and value are same then we can declare
+        property like this
+        <br />
+        chemistry: chemistry,
+        <br />
+        total: function() {
+        <br />
+        console.log(
+        <br />
+        this.maths+this.physics+this.chemistry
+        <br />
+        );
+        <br />
+        },
+        <br />
+        aggregate(){
+        <br />
+        console.log(
+        <br />
+        this.maths+this.physics+this.chemistry
+        <br />
+        );
+        <br />
+        }
+        <br />
+        };
+        <br />
+        }
+        <br />
+      </div>
+    </div>
+    <p>
+      aggregate is also a method like total. It looks like how we used to
+      declare function outside object like function name{return 1;} but as it is
+      declared inside object u can remove
+    </p>
+    <script src="factoryfunc.js"></script>
+  </body>
+</html>
