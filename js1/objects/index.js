@@ -1,17 +1,3 @@
-console.log(
-    "Earlier we have seen about objects - collection of key value pairs",
-    "(property and its value). so if you have properties that are ",
-    "highly related to each other, we can encapsulate them inside ",
-    "an object."
-);
-console.log(
-    "For example, Let us take student's exam results of three ",
-    "subjects instead of declaring it in 3 different variables we can",
-    "declare it inside an object. Obviously you can declare those ",
-    "keys(properties - physics, maths...) as varibles outside object. ",
-    "But it is better to follow this approach as these variables are ",
-    "related to each other. we call this object orinted programming"
-);
 let student1Marks = {
     maths: 82,
     physics: 75,
@@ -53,29 +39,3 @@ console.log(
 console.log(" ");console.log(" ");
 
 
-
-/* 
-property constructor references the function that was used to construct or 
-create that object. 
-*/
-console.log(
-    "student1.constructor(created using factory functions) : \n",
-    student1.constructor
-);
-console.log(
-    "stu1.constructor(created using constructor functions) : \n",
-    stu1.constructor
-);
-
-console.log(
-    "You can see when we see constructor property of factory functions ",
-    "we get f which is function and Object(). What is that object? ",
-    "This is a built in constructor function in JavaScript, when we create an ",
-    "object using object literal syntax => {}(which we use for factory functions),",
-    "internally the JavaScript engine uses this constructor function"
-);
-console.log(
-    "For example, when we create an object using object literal syntax ",
-    "\nlet x ={}; \njs will do something like this ",
-    "\nlet x = new Object();\nwhere Object() is built-in fuction."
-);

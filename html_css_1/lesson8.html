@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+    <style>
+      .before {
+        height: 400px;
+        width: 400px;
+      }
+      .after {
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        Unsplash website has lot of free images. So you can search and use
+        images those images.
+        <br />
+        While naming the image, you can name whatever you want but always give a
+        descriptive name of what is in the image. This is a search Engine
+        Optimization trick, by which search engines can understand webpages
+        better and show your results at top.
+      </div>
+      <img src="pic/water-droplet.jpg" alt="water droplet" class="before" />
+      <img src="pic/water-droplet.jpg" alt="water droplet" class="after" />
+      <br />
+      Although alt is not a necessary attribute, it can be useful for following
+      reasons:
+      <ul>
+        <li>
+          When visually impaired people uses screen reader it reads the alt text
+          for them when it encounters with image.
+        </li>
+        <li>It is also used in Search Engine Optimization.</li>
+        <li>
+          It is also used when image doesn't load. When image doesn't load it
+          shows the alt text.
+        </li>
+      </ul>
+      <p>
+        When you use a rectangler image and make it look like a square image
+        using css, it squashes the image. So to overcome this we use object-fit
+        and set it to cover.
+      </p>
+    </div>
+  </body>
+</html>

@@ -7,24 +7,107 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/lesson2.css">
-
+    <style>
+        a[target]  {
+            color: orange;
+        }
+        a[href="https://github.com/NithinShanmugamV"]  {
+            color: green;
+        }
+        a[href *= "tab=repositories"]  {
+            color:mediumvioletred;
+        }
+        a[href *= "www"]  {
+            color: brown;
+        }
+        a[href *= ".in"]  {
+            color:orangered;
+        }
+        a[href ^= "https"][href $= ".in"][href *= "amazon"]  {
+            color:purple;
+        }
+        .container {
+            display: flex;
+        }
+        .internal1 {
+            background-color: crimson;
+            box-shadow: beige;
+            flex: 25%;
+            margin-right: 5%;
+            padding: 15px;
+            height:150px;
+            border-radius: 15px;
+        }
+        .internal2 {
+            background-color: cadetblue;
+            box-shadow: chocolate;
+            flex: 25%;
+            margin-right: 5%;
+            padding: 15px;
+            height:150px;
+            border-radius: 15px;
+        }
+        .internal11 {
+            background-color: darkolivegreen;
+            box-shadow: beige;
+            flex: 25%;
+            margin-right: 5%;
+            padding: 15px;
+            height:150px;
+            border-radius: 15px;
+        }
+        .internal12 {
+            background-color: aqua;
+            box-shadow: chocolate;
+            flex: 25%;
+            margin-right: 5%;
+            padding: 15px;
+            height:150px;
+            border-radius: 15px;
+        }
+        .internal21 {
+            background-color:mediumturquoise;
+            box-shadow: beige;
+            flex: 25%;
+            margin-right: 5%;
+            padding: 15px;
+            height:150px;
+            border-radius: 15px;
+        }
+        .internal22 {
+            background-color: beige;
+            box-shadow: lemonchiffon;
+            flex: 25%;
+            margin-right: 5%;
+            padding: 15px;
+            height:150px;
+            border-radius: 15px;
+        }
+        .internal31 {
+            background-color: orange;
+            box-shadow: chocolate;
+            flex: 25%;
+            margin-right: 5%;
+            padding: 15px;
+            height:550px;
+            border-radius: 55px;
+        }
+        .internal32 {
+            background-color:saddlebrown;
+            box-shadow: beige;
+            flex: 25%;
+            margin-right: 5%;
+            padding: 15px;
+            height:550px;
+            border-radius: 55px;
+        }
+    </style>
 </head>
 <body>
     <div>
         <p>
             What is a selector in css.<br>
-            <div>
-                &lt;style&gt;<br>
-                body {<br>
-                    margin: 10px;<br>
-                  }<br>
-                p {<br>
-                  color: orange;<br>
-                }<br>
-                &lt;/style&gt;
-              </div><br><br>
-              Here body and p are the selectors.<br>
-              In css we have few ways to select elements and style them.
+            In css we have few ways to select elements and style them.
             They are: <br>
             <ul>
                 <li>Type</li>
@@ -33,13 +116,122 @@
                 <li>Attribute</li>
             </ul>
         </p>
-        <div>
-            <p>
-                In the above example we used type selector where we asked 
-                to select all the paragraph items and give orange colour 
-                to them. Also, we asked all elements in body tag to 
-            </p>
+        <div class="container">
+            <div class="internal1">
+                &lt;style&gt;<br>
+                body {<br>
+                    margin: 10px;<br>
+                  }<br>
+                p {<br>
+                  color: orange;<br>
+                }<br>
+                &lt;/style&gt;
+            </div>
+            
+            <div class="internal2">
+                Here we are selecting body and p using type selectors.<br>
+                In the example we used type selector where we asked to
+                select all the paragraph items and give orange colour to them.
+                Also, we asked all elements in body tag to give 10px of padding.
+            </div>
         </div>
+        <br>
+        <div class="container">
+            <div class="internal11">
+                &lt;style&gt;<br>
+                .paraitem {<br>
+                  color: orange;<br>
+                }<br>
+                &lt;/style&gt;
+                &lt;body&gt;
+                &lt;p class="paraitem"&gt;<br>
+                &lt;p class="paraitem"&gt;<br>
+                &lt;p class="paraitem"&gt;<br>
+                &lt;/body&gt;
+            </div>
+                  
+            <div class="internal12">
+                Here we are selecting p using class selectors.<br> 
+                In the example we used class selector where we asked to 
+                select all that has class "paraitem" and give orange colour to them. 
+                We declare this rule in css like this .class_name{}. 
+                Note, We have 3 p tags with same class which applies same styling for these 3 tags. 
+                We can use same class for multiple tags as it is used to group tags which are similar.                
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="internal21">
+                &lt;style&gt;<br>
+                #paraitem {<br>
+                  color: orange;<br>
+                }<br>
+                &lt;/style&gt;
+                &lt;body&gt;
+                &lt;p id="paraitem"&gt;<br>
+                &lt;/body&gt;
+            </div>
+                  
+            <div class="internal22">
+                Here we are selecting p using id selectors.<br> 
+                In the example we used id selector where we asked to 
+                select paragraph tag that has id "paraitem" and give orange colour to them. 
+                We declare this rule in css like this #class_name{}.
+                Note, We cannot have multiple tags with same id. Id is supposed to be used for only one tag.
+                Unlike class id should be unique. For example consider these tags as 2 same cars belongs to same model.
+                Eventhough they are same car they cannot have same vehicle number.
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="internal31">
+                &lt;style&gt;<br>
+                a[target]  {<br>
+                  color: orange;<br>
+                }<br>
+                a[href="https://github.com/NithinShanmugamV"]  {<br>
+                    color: green;<br>
+                  }<br>
+                a[href *= "tab=repositories"]  {<br>
+                    color: mediumvioletred;<br>
+                }<br>
+                a[href ^= "www"]  {<br>
+                    color: brown;<br>
+                }<br>
+                a[href $= ".in"]  {<br>
+                    color: orangered;<br>
+                }<br>
+                a[href ^= "https"][href $= ".in"][href *= "amazon"]  {<br>
+                    color: purple;<br>
+                }<br>
+                &lt;/style&gt;
+                &lt;body&gt;<br>
+                <a href="https://github.com/NithinShanmugamV" target="_blank">&lt;a href="https://github.com/NithinShanmugamV"&gt;</a><br>
+                <a href="github.com/NithinShanmugamV">&lt;a href="github.com/NithinShanmugamV"&gt;</a><br>
+                <a href="https://github.com/NithinShanmugamV?tab=repositories">&lt;a href="https://github.com/NithinShanmugamV?tab=repositories"&gt;</a><br>
+                <a href="github.com/NithinShanmugamV?tab=repositories">&lt;a href="github.com/NithinShanmugamV?tab=repositories"&gt;</a><br>
+                <a href="www.webwhatsapp.com">&lt;a href="www.webwhatsapp.com&gt;</a><br>
+                <a href="www.amazon.in">&lt;a href="www.amazon.in&gt;</a><br>
+                <a href="https://www.amazon.in">&lt;a href="https://www.amazon.in&gt;</a><br>
+                &lt;/body&gt;
+            </div>
+                  
+            <div class="internal32">
+                Here we are selecting links using Attribute selectors.<br> 
+                In the example we used attribute selector where we asked to select 
+                link which has target attribute. We can also select attribute which 
+                has particular values. <br><br>See second rule it selects all links which navigates 
+                to https://github.com/NithinShanmugamV. <br><br>Note first two links even 
+                though they navigates to same page they are not given same styling. 
+                Because second link doesn't have https:// . So to avoid this and select all 
+                links which navigates to same page even though they have some url difference 
+                we can style like third rule. <br><br>
+                Also we can select links which starts with specific pattern and ends with 
+                specific pattern. See forth and fifth rule.<br><br>
+                We can also combine two are three rules. See sixth rule.
+            </div>
+        </div>
+        
     </div>
 </body>
 </html>

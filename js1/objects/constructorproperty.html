@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      Property constructor references the function that was used to construct or
+      create that object. Inspect this webpage.
+      <br />
+      <br />
+      When we look at constructor property of factory functions we get f which
+      is function and Object(). What is that Object()? This is a built in
+      constructor function in JavaScript.
+      <br />
+      <br />
+      When we create an object using object literal syntax => {}(which we use
+      for factory functions), internally the JavaScript engine uses this
+      constructor function For example, when we create an object using object
+      literal syntax
+      <br />
+      let x ={};
+      <br />
+      js will do something like this
+      <br />
+      let x = new Object();
+      <br />
+      where Object() is built-in fuction. So our object Student1 which was
+      created by factory functions, is created using constructor function
+      Object() internally.
+      <br />
+      <br />
+      We also have few other built-in functions.
+      <br />
+      new String(); creates stringbut often we use string literal like '',"",``
+      <br />
+      new Boolean(); creates boolean but often we use boolean literal like true
+      or false
+      <br />
+      new Number(); creates numbers but often we use number literal like
+      1,2,3,...
+      <br />
+    </div>
+    <script src="constructorproperty.js"></script>
+  </body>
+</html>
