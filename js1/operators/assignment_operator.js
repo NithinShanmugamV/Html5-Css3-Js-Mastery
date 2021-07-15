@@ -1,0 +1,16 @@
+let x = 5;
+console.log("value of x is: ",x);
+x += 1;
+console.log("addition assignment operator: +=","value of x when added 1 to it: ",x);
+x -= 1;
+console.log("subtraction assignment operator: -=","value of x when 1 is subtracted from it: ",x);
+x *= 5;
+console.log("multiplication assignment operator: *=", "value of x when 5 is multiplied to it: ",x);
+x /= 5;
+console.log("division assignment operator: /=", "value of x when 5 id divided to it: ",x);
+x %= 2;
+console.log("remainder assignment operator: %=","remainder of x when it is divided by 2: ",x);
+x = 5;
+x **= 3;
+console.log("exponential assignment operator: /=", "cube value of 5 : ",x);
+console.log(" ");console.log(" ");
