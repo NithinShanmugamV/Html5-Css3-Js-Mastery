@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .imagecont {
+        background-color: aqua;
+        box-shadow: chocolate;
+        flex: 45%;
+        margin-right: 2.5%;
+        padding: 15px;
+        height: 850px;
+        border-radius: 45px;
+      }
+      .image {
+        background-color: aqua;
+        box-shadow: chocolate;
+        flex: 45%;
+        margin-right: 2.5%;
+        object-fit: contain;
+      }
+      .explanation {
+        background-color: bisque;
+        box-shadow: beige;
+        flex: 35%;
+        margin-left: 2.5%;
+        padding: 15px;
+        padding-top: 40px;
+        height: 850px;
+        border-radius: 45px;
+      }
+      em {
+        font-size: 110%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="imagecont">
+        <div class="container">
+          <div class="image"><img src="./../pics/valueVsReference.png" /></div>
+          <div class="image"><img src="./../pics/valueVsReference.png" /></div>
+        </div>
+      </div>
+      <div class="explanation">
+        Lets' discuss about reference and value types. All the primitive types
+        comes under value types and object, functions, arrays as already
+        discussed comes under refence type. Let us see why are they categorized
+        in this way.
+        <br />
+        <br />
+        let us take an example consider a variable x and give it a value 8. Now
+        declare a variable y and assign a value. So it looks like:
+        <br />
+        <br />
+        let x = 8;
+        <br />
+        let y = x;
+        <br />
+        x = 10;
+        <br />
+        Now let us print these values in console.
+      </div>
+    </div>
+  </body>
+</html>

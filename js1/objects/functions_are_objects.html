@@ -10,49 +10,74 @@
         display: flex;
       }
       .imagecont {
-        background-color: bisque;
-        box-shadow: beige;
+        background-color: aqua;
+        box-shadow: chocolate;
         flex: 45%;
         margin-right: 2.5%;
         padding: 15px;
-        height: 520px;
-        border-radius: 52px;
+        height: 850px;
+        border-radius: 45px;
       }
       .image {
         width: 100%;
       }
       .explanation {
-        background-color: aqua;
-        box-shadow: chocolate;
+        background-color: bisque;
+        box-shadow: beige;
         flex: 35%;
         margin-left: 2.5%;
         padding: 15px;
         padding-top: 40px;
-        height: 520px;
-        border-radius: 52px;
+        height: 850px;
+        border-radius: 45px;
+      }
+      em {
+        font-size: 110%;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="imagecont">
-        <img
-          class="image"
-          src="../pics/● functions_are_objects.js - learning-web-devlopment - Visual Studio Code - Insiders 12-07-2021 19_22_48.png"
-        />
+        <img class="image" src="../pics/functionObjects.png" />
+        <br />
+        <br />
+        <img class="image" src="../pics/CreatingFunctions.png" />
       </div>
       <div class="explanation">
-        In JavaScript is here functions are objects. Let us create a function
-        called hi. Look at the image at left. So the purple icons are methods,
-        like call, bind, and apply, and the blue icons are properties. Name
-        returns the name of this function, length returns the number of
-        arguments.
+        In JavaScript every function is a object. Let us create a function
+        called hi. Look at last line of the first image at left. Function Hi is
+        an object and here the purple icons(like call, bind, and apply) are
+        methods, and the blue icons are properties. Name returns the name of
+        this function, length returns the number of arguments.
         <br />
         <br />
-        Every object has constructor property. If function is an object, from
-        which object function is created. Let's look at it's constructor
-        property[Inspect this webpage and see console]. Function is made by
-        in-built object called Function().
+        We didn't create any object for creating this function,
+        <strong>
+          but it is an object
+        </strong>
+        . So it must be created by
+        <em>built-in constructor functions</em>
+        . How to know what built-in function created it. Well Let's look at it's
+        constructor property[Inspect this webpage and see console].
+        <br />
+        <br />
+        <strong>Function is made by in-built object called Function()</strong>
+        , just like how factory functions are created using in-built constructor
+        function called Object(). When we declare function using
+        <em>
+          function hi(name){}
+        </em>
+        syntax internally the JavaScript engine uses Function() constructor to
+        create this object. Let's see this confusing concept with an example.
+        <br />
+        <br />
+        Let us try to create an object with
+        <ul>
+          <li>Constructor function</li>
+          <li>Using function object</li>
+        </ul>
+        See the second picture.
       </div>
     </div>
     <script src="functions_are_objects.js"></script>

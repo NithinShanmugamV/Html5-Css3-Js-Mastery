@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .imagecont {
+        background-color: aqua;
+        box-shadow: chocolate;
+        flex: 45%;
+        margin-right: 2.5%;
+        padding: 15px;
+        height: 850px;
+        border-radius: 45px;
+      }
+      .image {
+        width: 100%;
+      }
+      .explanation {
+        background-color: bisque;
+        box-shadow: beige;
+        flex: 35%;
+        margin-left: 2.5%;
+        padding: 15px;
+        padding-top: 40px;
+        height: 850px;
+        border-radius: 45px;
+      }
+      em {
+        font-size: 110%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <div>
+        Now let's take a look at a couple methods that are available in your
+        functions. Here we have this call method, and with this we can call a
+        function. Look at the arguments. When you hover over the argument editor
+        shows the first argument as
+        <em>this argument</em>
+        . Here we need to pass an empty object{} and
+        <em>this keyword</em>
+        in the constructor function will reference this empty object that we
+        pass in call. After that we have to pass other parameters the function
+        needs.
+        <br />
+        <br />
+        Note
+        <br />
+        <strong>
+          hi.call({},"Nithin");
+          <br />
+          let msg1 = new hi("Nithin");
+        </strong>
+        when we use the
+        <em>new operator</em>
+        , this
+        <em>new operator</em>
+        will internally create an empty object and pass that as the first
+        argument to the call method.
+        <br />
+        <br />
+        If you don't use new keyword while using constructor function, then
+        <em>this keyword</em>
+        in constructor function will point to global object windows. So if you
+        want to do this in call method, instead of sending empty object{} as
+        first parameter, you needs to send windows.
+        <br />
+        <strong>
+          hi.call(window,"Nithin");
+          <br />
+          let msg1 = hi("Nithin");
+        </strong>
+        <br />
+        <br />
+        Now we have another method called apply. It's exactly like the call
+        method, with this we can call a function, but instead of passing all the
+        arguments explicitly we pass them in an array. So this is useful if you
+        already have an array somewhere in your application, and you want to
+        pass an array as the second argument to the apply method.
+      </div>
+    </div>
+    <script src="functions_are_objects2.js"></script>
+  </body>
+</html>
