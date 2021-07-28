@@ -5,7 +5,6 @@ const opertions = {
         console.log(this);
     }
 };
-opertions.demoPrint();
+
 const demoPrint= opertions.demoPrint.bind(opertions)
-console.log(demoPrint);
 demoPrint();
