@@ -35,27 +35,24 @@
       <div class="way1">
         function createStudentmarks(maths, physics,chemistry){
         <br />
-        let student1Marks = {
+        &nbsp; &nbsp; let student1Marks = {
         <br />
-        maths: maths,
+        &nbsp; &nbsp; &nbsp; &nbsp; maths: maths,
         <br />
-        physics: physics,
+        &nbsp; &nbsp; &nbsp; &nbsp; physics: physics,
         <br />
-        chemistry: chemistry,
+        &nbsp; &nbsp; &nbsp; &nbsp; chemistry: chemistry,
         <br />
-        total: function() {
+        &nbsp; &nbsp; &nbsp; &nbsp; total: function() {
         <br />
-        console.log(
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        console.log(this.maths+this.physics+this.chemistry);
         <br />
-        this.maths+this.physics+this.chemistry
+        &nbsp; &nbsp; &nbsp; &nbsp; }
         <br />
-        );
+        &nbsp; &nbsp; };
         <br />
-        }
-        <br />
-        };
-        <br />
-        return student1Marks;
+        &nbsp; &nbsp; return student1Marks;
         <br />
         }
         <br />
@@ -63,36 +60,30 @@
       <div class="way2">
         function createStudentmarks1(maths, physics,chemistry){
         <br />
-        return {
+        &nbsp; &nbsp; return {
         <br />
-        maths: maths,
+        &nbsp; &nbsp; &nbsp; &nbsp; maths: maths,
         <br />
-        physics, //in modern js if key and value are same then we can declare
-        property like this
+        &nbsp; &nbsp; &nbsp; &nbsp; physics, //in modern js if key and value are
+        same then we can declare property like this
         <br />
-        chemistry: chemistry,
+        &nbsp; &nbsp; &nbsp; &nbsp; chemistry: chemistry,
         <br />
-        total: function() {
+        &nbsp; &nbsp; &nbsp; &nbsp; total: function() {
         <br />
-        console.log(
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        console.log(this.maths+this.physics+this.chemistry);
         <br />
-        this.maths+this.physics+this.chemistry
+        &nbsp; &nbsp; &nbsp; &nbsp; },
         <br />
-        );
+        &nbsp; &nbsp; &nbsp; &nbsp; aggregate(){
         <br />
-        },
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        console.log(this.maths+this.physics+this.chemistry);
         <br />
-        aggregate(){
+        &nbsp; &nbsp; &nbsp; &nbsp; }
         <br />
-        console.log(
-        <br />
-        this.maths+this.physics+this.chemistry
-        <br />
-        );
-        <br />
-        }
-        <br />
-        };
+        &nbsp; &nbsp; };
         <br />
         }
         <br />
