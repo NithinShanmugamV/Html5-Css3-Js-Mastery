@@ -33,7 +33,7 @@ Link to html document : https://nithinshanmugamv.github.io/Html5-Css3-Js-Mastery
 ```
 
 5. Now we have another div which is inside parent div. This div has <p> element inside. Now, what do you think will happen. As we know all p element inside parent div will be brown no matter whether they are nested or not.
-   ![Image](pics/lesson2-1.png)
+   ![Image](pics/lesson2-1.png?raw=true)
 
 6. What if we wanted to style p element which is direct child of parent div i.e., we don't want to style other nested p elements. To do that we include > between id and type selector.
 
@@ -45,7 +45,7 @@ Link to html document : https://nithinshanmugamv.github.io/Html5-Css3-Js-Mastery
 </style>
 ```
 
-![Image](pics/lesson2-2.png)
+![Image](pics/lesson2-2.png?raw=true)
 
 7. There is also an relative selector to select sibilings.
 
@@ -57,8 +57,8 @@ Link to html document : https://nithinshanmugamv.github.io/Html5-Css3-Js-Mastery
 </style>
 ```
 
-![Image](pics/lesson2-3.png)
-![Image](pics/lesson2-4.png)
+![Image](pics/lesson2-3.png?raw=true)
+![Image](pics/lesson2-4.png?raw=true)
 
 This selects next p element. Note, next p element should not be nested and it should be right after parent div.
 
@@ -72,6 +72,6 @@ This selects next p element. Note, next p element should not be nested and it sh
 </style>
 ```
 
-![Image](pics/lesson2-5.png)
+![Image](pics/lesson2-5.png?raw=true)
 
 Note, it should sibiling should not be nested
