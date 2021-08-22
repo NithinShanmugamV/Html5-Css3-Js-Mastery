@@ -1,8 +1,11 @@
+Link to html document : https://nithinshanmugamv.github.io/Html5-Css3-Js-Mastery/html_css_1/lesson-css/2-selectors/selectors1.html
+
 1 . What is a selector in css. In css we have few ways to select elements and style them. They are:
-*Type
-*ID
-*Class
-*Attribute
+
+1. Type
+2. ID
+3. Class
+4. Attribute
 
 ```
 <style>
