@@ -74,4 +74,38 @@ This selects next p element. Note, next p element should not be nested and it sh
 
 ![Image](pics/lesson2-5.png?raw=true 'Title')
 
-Note, it should sibiling should not be nested
+Note, sibiling should not be nested
+![Image](pics/lesson2-6.png?raw=true 'Title
+
+9. Relational selectors offers clean markup but it also have some disadvantages. They can be fragile. What does that mean let us take above code. We have a parent div and and p element after that.
+
+```
+<head>
+    <style>
+        #parent > p {
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ut.</p>
+    <div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quos!</p>
+    </div>
+</body>
+```
+
+We style first sibiling using relational selector. But next if we move this para up then the style breaks.
+
+10. They are not faster as other selectors. This time is really negligible. Let us see what it is. Imagine there is a div element which has id as parent and it has only 1 para sibiling but the total number of para elements is 100. Let us apply this below style.
+
+```
+<style>
+    #parent ~ p {
+        color: brown;
+    }
+</style>
+```
+
+What browser does it selects all p elements and checks who are all its direct sibiling which comes under parent div. So, it takes lot of time.
