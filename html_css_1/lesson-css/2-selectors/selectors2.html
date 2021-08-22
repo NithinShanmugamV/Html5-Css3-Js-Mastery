@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    In this lesson we will see how to select elements
-</body>
+    <style>
+      #parent + p {
+        color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ut.</p>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quos!
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores, tenetur!</p>
+        </p>
+      </div>
+    </div>
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quo.<span> &nbsp;&nbsp;&nbsp;-->Child of 1st sibiling</span></p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quo.</p>
+  </body>
 </html>
