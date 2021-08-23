@@ -1,4 +1,4 @@
-Link to html document : https://nithinshanmugamv.github.io/Html5-Css3-Js-Mastery/html_css_1/lesson-css/2-selectors/selectors1.html
+Link to html document : https://nithinshanmugamv.github.io/Html5-Css3-Js-Mastery/html_css_1/lesson-css/2-selectors/selectors2.html
 
 1. In this lesson we will see how to select elements based on relation with other elements. Let us have a p element inside a div whose id is parent.
 

@@ -31,8 +31,18 @@ Link to html document : https://nithinshanmugamv.github.io/Html5-Css3-Js-Mastery
 <body>
     <p class="paraitem">
     <p class="paraitem">
-    <p class="paraitem">
+    <div class="paraitem">
 </body>
+```
+
+If you want to style only p elements then
+
+```
+<style>
+    p.paraitem {
+        color: orange;
+    }
+    </style>
 ```
 
 3. Here we are selecting p using class selectors. In the example we used class selector where we asked to select all that has class "paraitem" and give orange colour to them. We declare this rule in css like this .class_name{}. Note, We have 3 p tags with same class which applies same styling for these 3 tags. We can use same class for multiple tags as it is used to group tags which are similar.
