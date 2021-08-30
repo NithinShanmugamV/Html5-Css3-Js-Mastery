@@ -1,1 +1,1 @@
-https://nithinshanmugamv.github.io/learning-web-devlopment/html_css_1/lesson1.html
+https://nithinshanmugamv.github.io/Html5-Css3-Js-Mastery/html_css_1/index.html

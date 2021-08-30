@@ -3,8 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>>Hyperlinks</title>
+    <style>
+      .img {
+        height: 200px;
+        width: 200px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <p>
+      In this webpage we are going to see about hyperlinks. Always webpages have
+      links that navigates to same page or different page. We use anchor element
+      to create these links.
+      <br />
+      <br />
+
+      <button onclick="alert('anchor element')">&lt;a href =''&gt;</button>
+      <br />
+      href is short for hyper text reference which means url.
+    </p>
+
+    <div>
+      Lets make a image as link
+      <br />
+      <a href="../js1/index.html">
+        <img class="img" src="pic/myimg.jpg" />
+      </a>
+      <p>
+        when you hover over an image icon changes to hand indicating that image
+        is clickable
+      </p>
+    </div>
+
+    <p>
+      relative url search for webpage with respect to folder where this document
+      is.
+      <br />
+      For example let us assume root folder has two folders named html_css_1 and
+      js1 where folder 1 has lesson1.html and lesson6.html whereas folder2 has
+      index.html to goto lesson1 webpage which is present in same folder,
+      <br />
+      <a href="lesson1.html">&lt;a href ='lesson1.html'&gt;</a>
+      <br />
+      to goto index webpage which is present in different folder,
+      <br />
+      <a href="../js1/index.html">&lt;a href ='../js1/index.html'&gt;</a>
+      <br />
+      <br />
+    </p>
+
+    <p>
+      If you are in deeply nested structure you want to go multiple levels up .
+      For example consider you are present 4 folders inside from home directory
+      and you want to go to index page which is in home directory. Then relative
+      url looks like ../../../../js1/index1.html which goes 4 levels up.But this
+      looks messy so instead we use absolute url &lt;a href ='/index.html'&gt;
+      where / represents home directory.
+    </p>
+    <br />
+    <br />
+    <p>
+      You can aslo link to non-html docs like images, pdfs etc.
+      <a href="pic/myimg.jpg">&lt;a href ="pic/myimg.jpg"&gt;</a>
+      <br />
+      If you want to make user download the image then add download attribute
+      <a href="pic/myimg.jpg" download>
+        &lt;a href ="pic/myimg.jpg" download&gt;
+      </a>
+    </p>
+  </body>
 </html>
