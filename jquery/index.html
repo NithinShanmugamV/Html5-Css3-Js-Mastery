@@ -35,18 +35,34 @@
         <h1>Learning jQuery</h1>
     </header>
     <div id="container">
-        <h2 id="heading1">Heading One</h2>
+        <h2 id="heading1" class="heading headingclass1">Heading One</h2>
         <p>
-        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos blanditiis distinctio a illo deleniti, laboriosam commodi qui voluptatem fugit, deserunt reprehenderit. Accusantium alias commodi molestiae et, minima? Quam cumque, repudiandae, eum eligendi debitis officia quos alias similique pariatur nobis cupiditate, sit facere accusamus veniam? Sapiente sunt dolore nam dicta eum.
+        	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos blanditiis distinctio a illo deleniti, laboriosam commodi qui voluptatem fugit, deserunt reprehenderit. Accusantium alias commodi molestiae et, minima? Quam cumque, repudiandae, eum eligendi debitis officia quos alias similique pariatur nobis cupiditate, <span>sit facere accusamus veniam?</span> Sapiente sunt dolore nam dicta eum.
         </p>
-        <h2 id="heading2">Heading Two</h2>
+        <h2 id="heading2" class="heading headingclass2">Heading Two</h2>
         <p>
-        	Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nobis dolores necessitatibus esse, fuga velit culpa beatae blanditiis illum maiores perferendis, cum magnam. Ullam nulla illum enim maiores in, iure, perspiciatis eligendi nisi, eos soluta, optio delectus reprehenderit recusandae sed. Aspernatur, rerum. Minima, distinctio, harum? Impedit sed nam iusto necessitatibus!
+        	Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nobis dolores necessitatibus esse, fuga velit culpa beatae blanditiis illum maiores perferendis, cum magnam. Ullam nulla illum enim maiores in, iure, perspiciatis eligendi nisi, eos soluta, optio delectus reprehenderit recusandae sed. Aspernatur, rerum. <span>Minima, distinctio, harum?</span> Impedit sed nam iusto necessitatibus!
         </p>
+        <ul id="list">
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+        </ul>
+        <input type="button" value="Button 1">
+        <input type="submit" value="Submit">
+        <input type="text"><br>
+        <a href="http://google.com">Google</a>
+        <a href="http://yahoo.com">Yahoo</a>
     </div>
     <script type="text/javascript">
-    	$('h2#heading1 ').hide(); 
+    	$('[href]').css('color', 'red');
+        $('a[href="http://yahoo.com"]').css('color', 'green');
     </script>
 </body>
-
+ 
 </html>
