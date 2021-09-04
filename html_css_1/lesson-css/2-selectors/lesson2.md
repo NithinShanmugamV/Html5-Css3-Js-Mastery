@@ -75,7 +75,7 @@ This selects next p element. Note, next p element should not be nested and it sh
 ![Image](pics/lesson2-5.png?raw=true 'Title')
 
 Note, sibiling should not be nested
-![Image](pics/lesson2-6.png?raw=true 'Title
+![Image](pics/lesson2-6.png?raw=true 'Title')
 
 9. Relational selectors offers clean markup but it also have some disadvantages. They can be fragile. What does that mean let us take above code. We have a parent div and and p element after that.
 

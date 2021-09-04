@@ -66,14 +66,16 @@
 </html>
 ```
 
-2. To hide all h2 elements
+2. Need to add click event on button1
 ```
 <script type="text/javascript">
-    $('h2').hide(); 
+    $('#btn1').click(function(){
+        alert("Button1 is clicked");
+    });
  </script>
 ```
 
-3. To hide h2 element whose id 'heading1'
+3. So people like to include the script tag in head section. But sometimes this won't work. The reason behind this is that Js tries to run this before html element loads. So to avoid this we change our code in the following manner
 ```
 <script type="text/javascript">
     $('h2#heading1').hide();
