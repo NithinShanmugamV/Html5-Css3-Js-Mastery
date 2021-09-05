@@ -4,3 +4,4 @@
 2. Operators: https://nithinshanmugamv.github.io/Html5-Css3-Js-Mastery/js1/operators/index.html
 3. Control Flow:
 4. Objects: https://nithinshanmugamv.github.io/Html5-Css3-Js-Mastery/js1/objects/index.html
+5. Arrays: https://nithinshanmugamv.github.io/Html5-Css3-Js-Mastery/js1/arrays/index.html

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Finding elements in an array1</title>
+</head>
+<body>
+	<div>
+		<h1 align="center">Finding elements in an array</h1>
+		Finding elements depend whether you are storing primitive or reference type. Let's start with primitive.<br>
+
+		Let array be : const arr = [1,'a',1,null,true,];<br><br>
+		<h2>indexOf()</h2>
+		We use method indexOf to check whether element is present in the array. If yes it returns index of the element. Else it returns -1.<br><br>
+		console.log(arr.indexOf('a')); //returns 1     <br>
+		console.log(arr.indexOf(1)); //returns 0     <br>
+		console.log(arr.indexOf(true)); //returns 4    <br>
+		console.log(arr.indexOf(null)); //returns 2    <br>
+		console.log(arr.indexOf(undefined)); //returns 5     <br>
+		console.log(arr.indexOf(4)); //returns -1    <br><br>
+		Note type of argument you are passing always matters. If you pass '1' as argument (arr.indexOf('1')), it considers 1 as string and returns -1 as element 1 of type string is not present.<br><br>
+		<h2>includes()</h2>
+		Similarly there is another method called includes that returns true if the element is present in the array.<br>
+		console.log(arr.includes(undefined));<br>
+		console.log(arr.includes(4));<br><br>
+
+		<h2>lastIndexOf()</h2>
+		Element 1 is present twice in our array. When we use indexOf() it returns first occurence. To get last occurrence.<br>
+		console.log(arr.lastIndexOf(1));<br><br>
+		Now, all thee methods have a second parameter which is optional. And that is the starting index. This is the index where operation begins. For example,<br>
+		arr.indexOf('a',2)<br>
+		starts searching for element 'a' from 2nd index.
+
+
+
+	</div>
+	<script type="text/javascript">
+		const arr = [1,'a',null,1,true,undefined];
+		console.log(arr.indexOf('a'));
+		console.log(arr.indexOf(1));
+		console.log(arr.indexOf(true));
+		console.log(arr.indexOf(null));
+		console.log(arr.indexOf(undefined));
+		console.log(arr.indexOf(4));
+		console.log(arr.includes(undefined));
+		console.log(arr.includes(4));
+		console.log(arr.lastIndexOf(1));
+		console.log(arr.indexOf('a',2));
+	</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Adding Elements</title>
+</head>
+<body>
+	<div>
+		Let's define an array: 
+		const arr = [3,6]; <br> <br>
+		Note we used const to declare an array. So, we cannot reassign an array but we can modify them. Which means: <br>
+		arr = [1,2,3,4];//throws an err<br><br>
+
+		We know that arrays are objects. We use methods to add elements in array.<br>
+		To add element at the end of an array: <strong>arr.push(7,8);</strong> <br>
+		To add element at the beginning of an array: <strong>arr.unshift(1,2);</strong> <br>
+		To add element at the middle of an array: <strong>arr.splice(3,0,4,5);</strong> <br><br>
+		To add element middle of an array we specify the index at which we should add element so we have passed 3 as our first 
+		argument. We passes 0 as as our second argument. We will talk about this in the removing elements lesson but for now keep in mind that if you want to insert elements without deleting anything set zero as second parameter.<br>
+		Next we specify all the elements that are to be added.
+	</div>
+	<script type="text/javascript">
+		const arr = [3,6];
+		//arr = [1,2,3,4];
+		console.log(arr);
+		arr.push(7,8);
+		console.log("Adding Elements at the end: ",arr);
+		arr.unshift(1,2);
+		console.log("Adding Elements at the beginning: ",arr);
+		arr.splice(3,0,4,5);
+		console.log("Adding Elements at the middle: ",arr);
+	
+	</script>
+</body>
+</html>
