@@ -69,7 +69,7 @@ This styles first child of div element. It may be p tag or span tag or anything.
     }
 </style>
 ```
-```
+
 
 8. Now we have unordered lists. To style all list items that occur in odd positions.
 ```

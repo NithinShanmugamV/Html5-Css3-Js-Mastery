@@ -1,5 +1,5 @@
 function part1A() {
-    console.clear();
+    alert("Functions of some document properties");
     console.log("Examine the document susing console.dir(document): ");
     console.dir(document);
     console.log("Examine domain of document using console.log(document.domain): ",
@@ -35,6 +35,7 @@ function part1A() {
 }
 
 function part1B() {
+    alert("Using document.getElementById()");
     var headerTitle = document.getElementById('header-title');
     console.log("Lets get elements using their id document.getElementById('header-title'): ",
     	headerTitle);
@@ -66,7 +67,7 @@ function part1B() {
 }
 
 function part1C() {
-    console.log("Let's use getElementsByClassName to get all list items.");
+    alert("Using document.getElementByClassName()");
     var items = document.getElementsByClassName('list-items');
     console.log("document.getElementsByClassName('list-items') ",
         "returns an array of all elements that has class 'list-items'",
@@ -87,7 +88,8 @@ function part1C() {
         "which has class list-item and last li element does not have this");
 }
 function part1D() {
-    console.log("Let's use getElementsByTagName to get all list items.");
+    alert("Using document.getElementsByTagName()");
+    console.log("Let's use document.getElementsByTagName() to get all list items.");
     var items = document.getElementsByTagName('li');
     console.log("document.getElementsByTagName('li') ",
         "returns an array of all li html tags",
@@ -108,34 +110,78 @@ function part1D() {
 }
 
 function part1E() {
-    console.log("Let's look at query selector. We will select header and give some border.",
+    alert("Using document.querySelector()");
+    console.log("We will select header and give some border.",
         "\nvar header = document.querySelector('#main-header');",
         "\nheader.style.borderBottom = 'solid 3px #000';");
     var header = document.querySelector('#main-header');
     console.log("Note you can use any CSS selectors inside querySelector('USE_CSS_SELECTOR')");
     header.style.borderBottom = 'solid 3px #000';
+    console.log("Let us set some text in textbox.\nvar input = document.querySelector('input');",
+    "\ninput.value = \"Enter input\";");
     var input = document.querySelector('input');
     input.value = "Enter input";
     console.log("Even though there are two input values query selector by ",
         "default select only first value");
+    console.log("To style submit button,\nvar submit = document.querySelector('input[type = \"submit\"]');",
+        "\nsubmit.value = \"Send\";");
+    var submit = document.querySelector('input[type = "submit"]');
+    submit.value = "Send";
+    console.log("To style list-items, give font color as red to first list item.",
+        "\nvar list = document.querySelector('.list-items');",
+        "\nlist.style.color = 'red';");
+    var list = document.querySelector('.list-items');
+    list.style.color = 'red';
+    console.log("To style list-items, give font color as green vto last list item.",
+        "\nvar lastItem = document.querySelector('.list-group :last-child');",
+        "\nlastItem.style.color = 'green';");
+    var lastItem = document.querySelector('.list-group :last-child');
+    lastItem.style.color = 'green';
+    console.log("To style list-items, give font color as green vto last list item.",
+        "\nvar nthListItem = document.querySelector('.list-group :nth-child(2n)');",
+        "\nnthListItem.style.color = '#00B2FF'");
+    var nthListItem = document.querySelector('.list-group :nth-child(2n)');
+    nthListItem.style.color = 'orange';
+    console.log("Note even thought we have used css selector that selects all even childs",
+        ", querySelector only selects first. We can use querySelectorAll() to solve this");
+    console.log("var titles = document.querySelectorAll('.title');",
+        "\nvar nthItems = document.querySelectorAll('.list-group-item:nth-child(2n)');",
+        "\n Note this returns an array, So u cannot use nthListItem.style.color = '#00B2FF';",
+        "as it will throw err. Instead u need to iterate over array to style them");
+    var titles = document.querySelectorAll('.title');
+    var nthItems = document.querySelectorAll('.list-group-item:nth-child(2n)');
+    for(i of nthItems){
+        i.style.backgroundColor = '#00B2FF'
+    }
+    console.log(nthItems);
 
 }
 
 function reset(){
     console.clear();
-    var headerTitle = document.getElementById('header-title');
     var mainTitle = document.getElementById('main-title');
     var formTitle = document.getElementById('form-title');
     var items = document.getElementsByClassName('list-group-item');
     var header = document.getElementById('main-header');
+    var input = document.querySelector('input');
+    var submit = document.querySelector('input[type = "submit"]');
+    var listItem = document.querySelector('#items');
+    var itemList = document.querySelector('#items');
+    var headerContainer = document.querySelector("#main-header .container");
+
     header.style.borderBottom = '0';
-    headerTitle.innerHTML = 'Item Listener <span class="p-2 bg-dark text-white h-10" style="display: none;"> DOM</span>';
     mainTitle.innerHTML = 'Add items<span class="p-2 bg-dark text-white h-10" style="display: none;"> DOM</span>';
+    headerContainer.innerHTML = '<h1>Item Listener <span class="p-2 bg-dark text-white h-10" style="display: none;"> DOM</span></h1>';
     formTitle.innerHTML = 'Items';
     items[0].textContent = "items1";
     items[1].style.fontWeight = 'normal';
     items[2].style.color = 'black';
     for(i of items){
         i.style.backgroundColor = '#f4f4f4';
+        i.style.color = 'black';
     }
+    input.value = "";
+    submit.value = "Submit";
+    listItem.parentNode.style.backgroundColor = 'white';
+    itemList.previousElementSibling.style.color = "black";
 }
