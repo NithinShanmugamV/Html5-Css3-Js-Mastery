@@ -1,0 +1,1 @@
+1. Link to the page: https://nithinshanmugamv.github.io/Html5-Css3-Js-Mastery/js1/traversy-media/dom/dom.html

@@ -37,8 +37,7 @@ function part1A() {
 function part1B() {
     alert("Using document.getElementById()");
     var headerTitle = document.getElementById('header-title');
-    console.log("Lets get elements using their id document.getElementById('header-title'): ",
-    	headerTitle);
+    console.log("Lets get elements using their id document.getElementById('header-title'): ", headerTitle);
     headerTitle.textContent = "Hello";
     console.log("Let us change title of document using  headerTitle.textContent = \"Hello\";");
     var mainTitle = document.getElementById('main-title');
@@ -167,17 +166,17 @@ function reset(){
     var submit = document.querySelector('input[type = "submit"]');
     var listItem = document.querySelector('#items');
     var itemList = document.querySelector('#items');
-    var headerContainer = document.querySelector("#main-header .container");
+    var headerContainer = document.getElementById('main-header');
 
     header.style.borderBottom = '0';
     mainTitle.innerHTML = 'Add items<span class="p-2 bg-dark text-white h-10" style="display: none;"> DOM</span>';
-    headerContainer.innerHTML = '<h1>Item Listener <span class="p-2 bg-dark text-white h-10" style="display: none;"> DOM</span></h1>';
+    headerContainer.innerHTML = '<div class="container"><h1 id="header-title">Item Listener <span class="p-2 bg-dark text-white h-10" style="display: none;"> DOM</span></h1></div>';
     formTitle.innerHTML = 'Items';
     items[0].textContent = "items1";
     items[1].style.fontWeight = 'normal';
     items[2].style.color = 'black';
     for(i of items){
-        i.style.backgroundColor = '#f4f4f4';
+        i.style.backgroundColor = 'white';
         i.style.color = 'black';
     }
     input.value = "";
