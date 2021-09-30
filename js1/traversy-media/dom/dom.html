@@ -24,6 +24,11 @@
 			</h2>
 			<form class="form-inline mb-3 mt-3">
 				<input type="text" class="form-control mr-3">
+				<select class="form-control ml-3 mr-3">
+					<Option value = "1">1</Option>
+					<Option value = "2">2</Option>
+					<Option value = "3">3</Option>
+				</select>
 				<input type="submit" class="btn btn-dark" value="submit">
 			</form>
 			<h2 class="title" id="form-title">Items</h2>
@@ -34,7 +39,15 @@
 				<li class="list-group-item list-items">Item 4</li>
 				<li class="list-group-item">Item 5</li>
 			</ul>
+			<br>
+			<div id="output"></div>
+			<br>
+			<buttton class="btn btn-dark btn-block" id="button">Click Me</buttton>
 			<span></span>
+			<br>
+			<div id="box" style="width: 500px; height: 250px; background: #f4f4f4;">
+				<span style="display: none;">Hello</span>
+			</div>
 		</div>
 	</div>
 	<div class="container">
@@ -67,6 +80,17 @@
 			</button>
 		</div>
 		<div class="row">
+			<button onclick="part3A()" class="mt-3 ml-3 mr-3 offset-md-2 offset-lg-2">
+				Dom part-3A
+			</button>
+			<button onclick="part3B()" class="mt-3 ml-3 mr-3">
+				Dom part-3B
+			</button>
+			<button onclick="part3C()" class="mt-3 ml-3 mr-3">
+				Dom part-3C
+			</button>
+		</div>
+		<div class="row">
 			<button onclick="reset()" class="mt-3 ml-3 mr-3 offset-md-2 offset-lg-2">Reset</button>
 		</div>
 	</div>
@@ -74,5 +98,6 @@
 
 	<script type="text/javascript" src="dom1.js"></script>
 	<script type="text/javascript" src="dom2.js"></script>
+	<script type="text/javascript" src="dom3.js"></script>
 </body>
 </html>

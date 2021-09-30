@@ -167,6 +167,7 @@ function reset(){
     var listItem = document.querySelector('#items');
     var itemList = document.querySelector('#items');
     var headerContainer = document.getElementById('main-header');
+    var output = document.getElementById("output");
 
     header.style.borderBottom = '0';
     mainTitle.innerHTML = 'Add items<span class="p-2 bg-dark text-white h-10" style="display: none;"> DOM</span>';
@@ -183,4 +184,5 @@ function reset(){
     submit.value = "Submit";
     listItem.parentNode.style.backgroundColor = 'white';
     itemList.previousElementSibling.style.color = "black";
+    output.innerHTML = '';
 }
